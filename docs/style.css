@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    background: beige;
+}
+
+.section {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%
+}
+
+.full-size-image {
+    padding: 15em 0;
+    background-size: cover;
+}
+
+.plot-holder {
+    margin-bottom: 1em;
+}
+
+.plot-holder .caption {
+    color: #333;
+    text-align: right;
+    font-size: 0.75em;
+}
+
+.plot-holder h3 {
+    font-size: 2em;
+}
+
+.plot-holder .subtitle {
+    font-weight: bold;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.has-bg-img { background: url('https://cdn.pixabay.com/photo/2016/08/16/11/18/vineyard-1597724_1280.jpg')center center; background-size:cover}
+
+.title  {font-size: 3em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(218, 214, 211);}
+.subtitle {font-size: 1em; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(203, 197, 197);}
+
+/* chart styles */
+
+.chart-section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0px;
+}
+
+.story-body .chart-section {
+    padding-top: 0px;
+}
+
+
+.chart-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+p.chart-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    max-width: 700px;
+    margin: 0px auto 5px auto;
+}
+
+p.chart-subhead {
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+p.chart-label {
+    margin: 0 0 5px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.chart-row .chart {
+    width: 100%;
+    padding-right: 15px;
+    min-width: calc(25% - 15px);
+
+}
+
+
+
+p.chart-source {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+
+
+
+/* These are the styles for ai2html */
+
+#g-template-laptop,
+#g-template-medium,
+#g-template-mobile {
+    display: none;
+}
+
+@media (max-width: 490px) {
+    #g-template-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 620px) {
+    #g-template-laptop {
+        display: block;
+    }
+}
+
+@media (min-width: 620px) {
+    #g-template-medium {
+        display: block;
+    }
+}
